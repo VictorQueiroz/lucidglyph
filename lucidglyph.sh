@@ -27,18 +27,18 @@ SHOW_HEADER=${SHOW_HEADER:=true}
 
 # environment
 ENVIRONMENT_SCRIPT="$SRC_DIR/environment/lucidglyph.sh"
-DEST_ENVIRONMENT="/etc/environment"
+DEST_ENVIRONMENT="$DESTDIR/etc/environment"
 
 # fontconfig
 FONTCONFIG_DIR="$SRC_DIR/fontconfig"
-DEST_FONTCONFIG_DIR="/etc/fonts/conf.d"
+DEST_FONTCONFIG_DIR="$DESTDIR/etc/fonts/conf.d"
 #                    ("<NAME>" "<PRIORITY>")
 FONTCONFIG_GRAYSCALE=("lucidglyph-grayscale.conf" 11)
 FONTCONFIG_DROID_SANS=("lucidglyph-droid-sans.conf" 70)
 
 # Metadata location
-DEST_SHARED_DIR="/usr/share/lucidglyph"
-DEST_SHARED_DIR_OLD="/usr/share/freetype-envision"
+DEST_SHARED_DIR="$DESTDIR/usr/share/lucidglyph"
+DEST_SHARED_DIR_OLD="$DESTDIR/usr/share/freetype-envision"
 DEST_INFO_FILE="info"
 DEST_UNINSTALL_FILE="uninstaller.sh"
 
